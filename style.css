@@ -1,0 +1,213 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #5bd5af; /* Original green color */
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    width: 100%;
+    margin: auto;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input, button {
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #d3826c;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #edd465;
+}
+
+footer {
+    background-color: #433f23;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+
+/* Mobile Phones (width 600px and below) */
+@media only screen and (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    input, button {
+        font-size: 14px;
+    }
+
+    h1, h2 {
+        font-size: 20px;
+    }
+}
+
+/* Tablets (width between 600px and 768px) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+}
+
+/* PCs and Larger Screens (width 769px and above) */
+@media only screen and (min-width: 769px) and (max-width: 1199px) {
+    main {
+        width: 80%;
+        margin: auto;
+    }
+
+    section {
+        display: flex;
+        align-items: center;
+    }
+
+    section img {
+        margin-right: 20px;
+    }
+
+    form {
+        width: 50%;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+}
+
+/* Large Screens (width 1200px and above) */
+@media only screen and (min-width: 1200px) {
+    body {
+        font-size: 18px;
+    }
+
+    header {
+        padding: 30px;
+        text-align: left; /* Align header to the left for better layout on large screens */
+    }
+
+    h1 {
+        font-size: 48px; /* Larger heading for large screens */
+    }
+
+    h2 {
+        font-size: 32px; /* Larger sub-heading */
+    }
+
+    main {
+        width: 70%; /* Make content more narrow for large screens */
+        margin: auto;
+    }
+
+    section {
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    form {
+        width: 35%; /* Make form narrower */
+    }
+
+    input, button {
+        padding: 15px; /* Increase padding for larger elements */
+        font-size: 18px;
+    }
+
+    footer {
+        font-size: 16px;
+        padding: 20px;
+    }
+}
